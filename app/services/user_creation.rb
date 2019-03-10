@@ -18,8 +18,7 @@ class UserCreation
 
   private
   def find_family_goal
-    FamilyGoal.find_by( cargo: user.cargo,
-                        area:user.area,
-                        mundo: user.mundo)
+    opts = user.slice(:cargo, :area, :mundo).values.map(&:downcase)
+    FamilyGoal.where('lower(cargo) = ? AND lower(area) = ? AND lower(mundo) = ?', *opts).take
   end
 end

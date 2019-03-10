@@ -14,3 +14,12 @@ FamilyGoal.create([
   { familia: "EJECUTIVO PYME", cargo: "EJECUTIVO PYME" ,  area: "ZONA CENTRO",  mundo: "Banco y Filiales"},
   { familia: "GESTOR COMERCIAL SENIOR", cargo: "EJECUTIVO PERSONAS" ,  area: "ZONA NORTE",  mundo: "Banco y Filiales"},
 ])
+
+
+User.create([
+  { nombre: "Juan", cargo: "EJECUTIVO PERSONAS" ,  area: "ZONA SUR",  mundo: "Santander"},
+  { nombre: "Pedro", cargo: "AGENTE I" ,  area: "ZONA NORTE",  mundo: "Banco y Filiales"},
+  { nombre: "Norberto", cargo: "AGENTE II",  area: "ZONA CENTRO",  mundo: "Banefe"},
+  { nombre: "Emilio", cargo: "EJECUTIVO PYME" ,  area: "ZONA CENTRO",  mundo: "Banco y Filiales"},
+  { nombre: "Facundo", cargo: "EJECUTIVO PERSONAS" ,  area: "ZONA NORTE",  mundo: "Banco y Filiales"},
+])
