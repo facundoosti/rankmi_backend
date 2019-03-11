@@ -7,6 +7,13 @@ class UsersController < ApplicationController
            except: :family_goal_id
   end
 
+  def show
+    @user = User.find(params[:id])
+    render json: @user,
+           include: :family_goal,
+           except: :family_goal_id
+  end
+
   def create
     user_creation = UserCreation.new(user_params)
     if user_creation.save
